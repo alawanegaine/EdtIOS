@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4405B7D5167C9F8200CA7000 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405B7D4167C9F8200CA7000 /* SystemConfiguration.framework */; };
+		4405B7DA167CA13E00CA7000 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4405B7D9167CA13E00CA7000 /* Reachability.m */; };
+		4454BA0B167B699200942B84 /* GroupeConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4454BA0A167B699200942B84 /* GroupeConfigViewController.m */; };
+		4472ACC816739FFF00F97A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4472ACC716739FFF00F97A81 /* UIKit.framework */; };
+		4472ACCA16739FFF00F97A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4472ACC916739FFF00F97A81 /* Foundation.framework */; };
+		4472ACCC16739FFF00F97A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4472ACCB16739FFF00F97A81 /* CoreGraphics.framework */; };
+		4472ACD216739FFF00F97A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4472ACD016739FFF00F97A81 /* InfoPlist.strings */; };
+		4472ACD416739FFF00F97A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472ACD316739FFF00F97A81 /* main.m */; };
+		4472ACD816739FFF00F97A81 /* FormaIOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472ACD716739FFF00F97A81 /* FormaIOSAppDelegate.m */; };
+		4472ACDA16739FFF00F97A81 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4472ACD916739FFF00F97A81 /* Default.png */; };
+		4472ACDC1673A00000F97A81 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4472ACDB16739FFF00F97A81 /* Default@2x.png */; };
+		4472ACDE1673A00000F97A81 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4472ACDD1673A00000F97A81 /* Default-568h@2x.png */; };
+		4472ACE41673A00000F97A81 /* CoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472ACE31673A00000F97A81 /* CoursViewController.m */; };
+		4472ACEE1673A04F00F97A81 /* Cours.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472ACED1673A04F00F97A81 /* Cours.m */; };
+		4472ACF91673A77500F97A81 /* Groupe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4472ACF81673A77500F97A81 /* Groupe.m */; };
+		4477A20E167996CE00FCFF50 /* EtablissementConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4477A20D167996CE00FCFF50 /* EtablissementConfigViewController.m */; };
+		4477A211167A059500FCFF50 /* DepartementConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4477A210167A059500FCFF50 /* DepartementConfigViewController.m */; };
+		44A832351679093600C09CE5 /* GroupeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A832341679093600C09CE5 /* GroupeFetcher.m */; };
+		44A8323C16790B4600C09CE5 /* CoursFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8323B16790B4600C09CE5 /* CoursFetcher.m */; };
+		44A8324F1679391500C09CE5 /* Etablissement.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8324E1679391500C09CE5 /* Etablissement.m */; };
+		44A8325316793A0A00C09CE5 /* EtablissementFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325216793A0A00C09CE5 /* EtablissementFetcher.m */; };
+		44A832581679457700C09CE5 /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A832571679457700C09CE5 /* CellView.m */; };
+		44A8325B16795AD000C09CE5 /* Departement.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325A16795AD000C09CE5 /* Departement.m */; };
+		44A8325F16795B4300C09CE5 /* DepartementFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325E16795B4300C09CE5 /* DepartementFetcher.m */; };
+		44B9DF7A167E2768009B4B4D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9DF79167E2768009B4B4D /* iAd.framework */; };
+		44E3E32A1679746400C74FF4 /* reglages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E3281679746400C74FF4 /* reglages@2x.png */; };
+		44E3E32B1679746400C74FF4 /* reglages.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E3291679746400C74FF4 /* reglages.png */; };
+		44E3E32F167975EC00C74FF4 /* PreferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E32E167975EC00C74FF4 /* PreferencesManager.m */; };
+		44E3E332167979D000C74FF4 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E331167979D000C74FF4 /* ConfigViewController.m */; };
+		6684265D19D1F1F20039AB44 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6684265B19D1F1F20039AB44 /* MainStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4405B7D4167C9F8200CA7000 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4405B7D8167CA13E00CA7000 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4405B7D9167CA13E00CA7000 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4454BA09167B699200942B84 /* GroupeConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupeConfigViewController.h; sourceTree = "<group>"; };
+		4454BA0A167B699200942B84 /* GroupeConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupeConfigViewController.m; sourceTree = "<group>"; };
+		4472ACC316739FFF00F97A81 /* Forma iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forma iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4472ACC716739FFF00F97A81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4472ACC916739FFF00F97A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4472ACCB16739FFF00F97A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4472ACCF16739FFF00F97A81 /* Forma iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Forma iOS-Info.plist"; sourceTree = "<group>"; };
+		4472ACD116739FFF00F97A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4472ACD316739FFF00F97A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4472ACD516739FFF00F97A81 /* Forma iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Forma iOS-Prefix.pch"; sourceTree = "<group>"; };
+		4472ACD616739FFF00F97A81 /* FormaIOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormaIOSAppDelegate.h; sourceTree = "<group>"; };
+		4472ACD716739FFF00F97A81 /* FormaIOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormaIOSAppDelegate.m; sourceTree = "<group>"; };
+		4472ACD916739FFF00F97A81 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4472ACDB16739FFF00F97A81 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4472ACDD1673A00000F97A81 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4472ACE21673A00000F97A81 /* CoursViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoursViewController.h; sourceTree = "<group>"; };
+		4472ACE31673A00000F97A81 /* CoursViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoursViewController.m; sourceTree = "<group>"; };
+		4472ACEC1673A04F00F97A81 /* Cours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cours.h; sourceTree = "<group>"; };
+		4472ACED1673A04F00F97A81 /* Cours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cours.m; sourceTree = "<group>"; };
+		4472ACEF1673A10D00F97A81 /* Annee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Annee.h; sourceTree = "<group>"; };
+		4472ACF71673A77500F97A81 /* Groupe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Groupe.h; sourceTree = "<group>"; };
+		4472ACF81673A77500F97A81 /* Groupe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Groupe.m; sourceTree = "<group>"; };
+		4472ACFA1673AA0F00F97A81 /* TypeGroupe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeGroupe.h; sourceTree = "<group>"; };
+		4477A20C167996CE00FCFF50 /* EtablissementConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtablissementConfigViewController.h; sourceTree = "<group>"; };
+		4477A20D167996CE00FCFF50 /* EtablissementConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtablissementConfigViewController.m; sourceTree = "<group>"; };
+		4477A20F167A059500FCFF50 /* DepartementConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartementConfigViewController.h; sourceTree = "<group>"; };
+		4477A210167A059500FCFF50 /* DepartementConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartementConfigViewController.m; sourceTree = "<group>"; };
+		447DDC851673D5CE00D866AF /* Jour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jour.h; sourceTree = "<group>"; };
+		44A832331679093600C09CE5 /* GroupeFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupeFetcher.h; sourceTree = "<group>"; };
+		44A832341679093600C09CE5 /* GroupeFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupeFetcher.m; sourceTree = "<group>"; };
+		44A8323A16790B4600C09CE5 /* CoursFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursFetcher.h; sourceTree = "<group>"; };
+		44A8323B16790B4600C09CE5 /* CoursFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursFetcher.m; sourceTree = "<group>"; };
+		44A8324D1679391500C09CE5 /* Etablissement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Etablissement.h; sourceTree = "<group>"; };
+		44A8324E1679391500C09CE5 /* Etablissement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Etablissement.m; sourceTree = "<group>"; };
+		44A8325116793A0A00C09CE5 /* EtablissementFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtablissementFetcher.h; sourceTree = "<group>"; };
+		44A8325216793A0A00C09CE5 /* EtablissementFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtablissementFetcher.m; sourceTree = "<group>"; };
+		44A832561679457700C09CE5 /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		44A832571679457700C09CE5 /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
+		44A8325916795AD000C09CE5 /* Departement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Departement.h; sourceTree = "<group>"; };
+		44A8325A16795AD000C09CE5 /* Departement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Departement.m; sourceTree = "<group>"; };
+		44A8325D16795B4300C09CE5 /* DepartementFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartementFetcher.h; sourceTree = "<group>"; };
+		44A8325E16795B4300C09CE5 /* DepartementFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartementFetcher.m; sourceTree = "<group>"; };
+		44B9DF79167E2768009B4B4D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		44E3E3281679746400C74FF4 /* reglages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reglages@2x.png"; sourceTree = "<group>"; };
+		44E3E3291679746400C74FF4 /* reglages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reglages.png; sourceTree = "<group>"; };
+		44E3E32D167975EC00C74FF4 /* PreferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesManager.h; sourceTree = "<group>"; };
+		44E3E32E167975EC00C74FF4 /* PreferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesManager.m; sourceTree = "<group>"; };
+		44E3E330167979D000C74FF4 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		44E3E331167979D000C74FF4 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		6684265C19D1F1F20039AB44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4472ACC016739FFF00F97A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B9DF7A167E2768009B4B4D /* iAd.framework in Frameworks */,
+				4405B7D5167C9F8200CA7000 /* SystemConfiguration.framework in Frameworks */,
+				4472ACC816739FFF00F97A81 /* UIKit.framework in Frameworks */,
+				4472ACCA16739FFF00F97A81 /* Foundation.framework in Frameworks */,
+				4472ACCC16739FFF00F97A81 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4405B7D7167CA11600CA7000 /* InternetReachability */ = {
+			isa = PBXGroup;
+			children = (
+				4405B7D8167CA13E00CA7000 /* Reachability.h */,
+				4405B7D9167CA13E00CA7000 /* Reachability.m */,
+			);
+			name = InternetReachability;
+			sourceTree = "<group>";
+		};
+		4472ACB816739FFF00F97A81 = {
+			isa = PBXGroup;
+			children = (
+				4472ACCD16739FFF00F97A81 /* FormaIOS */,
+				4472ACC616739FFF00F97A81 /* Frameworks */,
+				4472ACC416739FFF00F97A81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4472ACC416739FFF00F97A81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4472ACC316739FFF00F97A81 /* Forma iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4472ACC616739FFF00F97A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B9DF79167E2768009B4B4D /* iAd.framework */,
+				4405B7D4167C9F8200CA7000 /* SystemConfiguration.framework */,
+				4472ACC716739FFF00F97A81 /* UIKit.framework */,
+				4472ACC916739FFF00F97A81 /* Foundation.framework */,
+				4472ACCB16739FFF00F97A81 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4472ACCD16739FFF00F97A81 /* FormaIOS */ = {
+			isa = PBXGroup;
+			children = (
+				4472ACD616739FFF00F97A81 /* FormaIOSAppDelegate.h */,
+				4472ACD716739FFF00F97A81 /* FormaIOSAppDelegate.m */,
+				6684265B19D1F1F20039AB44 /* MainStoryboard.storyboard */,
+				44A832541679452800C09CE5 /* Vues */,
+				44A832551679453400C09CE5 /* Controllers */,
+				4472ACEA1673A02200F97A81 /* Model */,
+				4405B7D7167CA11600CA7000 /* InternetReachability */,
+				4472ACCE16739FFF00F97A81 /* Supporting Files */,
+			);
+			path = FormaIOS;
+			sourceTree = "<group>";
+		};
+		4472ACCE16739FFF00F97A81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E3281679746400C74FF4 /* reglages@2x.png */,
+				44E3E3291679746400C74FF4 /* reglages.png */,
+				4472ACCF16739FFF00F97A81 /* Forma iOS-Info.plist */,
+				4472ACD016739FFF00F97A81 /* InfoPlist.strings */,
+				4472ACD316739FFF00F97A81 /* main.m */,
+				4472ACD516739FFF00F97A81 /* Forma iOS-Prefix.pch */,
+				4472ACD916739FFF00F97A81 /* Default.png */,
+				4472ACDB16739FFF00F97A81 /* Default@2x.png */,
+				4472ACDD1673A00000F97A81 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4472ACEA1673A02200F97A81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E32C1679757F00C74FF4 /* PreferencesManager */,
+				44A832361679094200C09CE5 /* Fetchers */,
+				4472ACEB1673A02900F97A81 /* Données */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4472ACEB1673A02900F97A81 /* Données */ = {
+			isa = PBXGroup;
+			children = (
+				44A8324D1679391500C09CE5 /* Etablissement.h */,
+				44A8324E1679391500C09CE5 /* Etablissement.m */,
+				44A8325916795AD000C09CE5 /* Departement.h */,
+				44A8325A16795AD000C09CE5 /* Departement.m */,
+				4472ACEC1673A04F00F97A81 /* Cours.h */,
+				4472ACED1673A04F00F97A81 /* Cours.m */,
+				4472ACF71673A77500F97A81 /* Groupe.h */,
+				4472ACF81673A77500F97A81 /* Groupe.m */,
+				4472ACF61673A76500F97A81 /* Enums */,
+			);
+			name = "Données";
+			sourceTree = "<group>";
+		};
+		4472ACF61673A76500F97A81 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4472ACFA1673AA0F00F97A81 /* TypeGroupe.h */,
+				4472ACEF1673A10D00F97A81 /* Annee.h */,
+				447DDC851673D5CE00D866AF /* Jour.h */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		4477A20B1679969B00FCFF50 /* DetailConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				4477A20C167996CE00FCFF50 /* EtablissementConfigViewController.h */,
+				4477A20D167996CE00FCFF50 /* EtablissementConfigViewController.m */,
+				4477A20F167A059500FCFF50 /* DepartementConfigViewController.h */,
+				4477A210167A059500FCFF50 /* DepartementConfigViewController.m */,
+				4454BA09167B699200942B84 /* GroupeConfigViewController.h */,
+				4454BA0A167B699200942B84 /* GroupeConfigViewController.m */,
+			);
+			name = DetailConfigs;
+			sourceTree = "<group>";
+		};
+		44A832361679094200C09CE5 /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				44A83250167939F100C09CE5 /* Etablissement */,
+				44A8325C16795B2800C09CE5 /* Departement */,
+				44A832371679094C00C09CE5 /* Groupe */,
+				44A8323916790B1600C09CE5 /* Cours */,
+			);
+			name = Fetchers;
+			sourceTree = "<group>";
+		};
+		44A832371679094C00C09CE5 /* Groupe */ = {
+			isa = PBXGroup;
+			children = (
+				44A832331679093600C09CE5 /* GroupeFetcher.h */,
+				44A832341679093600C09CE5 /* GroupeFetcher.m */,
+			);
+			name = Groupe;
+			sourceTree = "<group>";
+		};
+		44A8323916790B1600C09CE5 /* Cours */ = {
+			isa = PBXGroup;
+			children = (
+				44A8323A16790B4600C09CE5 /* CoursFetcher.h */,
+				44A8323B16790B4600C09CE5 /* CoursFetcher.m */,
+			);
+			name = Cours;
+			sourceTree = "<group>";
+		};
+		44A83250167939F100C09CE5 /* Etablissement */ = {
+			isa = PBXGroup;
+			children = (
+				44A8325116793A0A00C09CE5 /* EtablissementFetcher.h */,
+				44A8325216793A0A00C09CE5 /* EtablissementFetcher.m */,
+			);
+			name = Etablissement;
+			sourceTree = "<group>";
+		};
+		44A832541679452800C09CE5 /* Vues */ = {
+			isa = PBXGroup;
+			children = (
+				44A832561679457700C09CE5 /* CellView.h */,
+				44A832571679457700C09CE5 /* CellView.m */,
+			);
+			name = Vues;
+			sourceTree = "<group>";
+		};
+		44A832551679453400C09CE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4472ACE21673A00000F97A81 /* CoursViewController.h */,
+				4472ACE31673A00000F97A81 /* CoursViewController.m */,
+				44E3E330167979D000C74FF4 /* ConfigViewController.h */,
+				44E3E331167979D000C74FF4 /* ConfigViewController.m */,
+				4477A20B1679969B00FCFF50 /* DetailConfigs */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		44A8325C16795B2800C09CE5 /* Departement */ = {
+			isa = PBXGroup;
+			children = (
+				44A8325D16795B4300C09CE5 /* DepartementFetcher.h */,
+				44A8325E16795B4300C09CE5 /* DepartementFetcher.m */,
+			);
+			name = Departement;
+			sourceTree = "<group>";
+		};
+		44E3E32C1679757F00C74FF4 /* PreferencesManager */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E32D167975EC00C74FF4 /* PreferencesManager.h */,
+				44E3E32E167975EC00C74FF4 /* PreferencesManager.m */,
+			);
+			name = PreferencesManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4472ACC216739FFF00F97A81 /* Forma iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4472ACE71673A00000F97A81 /* Build configuration list for PBXNativeTarget "Forma iOS" */;
+			buildPhases = (
+				4472ACBF16739FFF00F97A81 /* Sources */,
+				4472ACC016739FFF00F97A81 /* Frameworks */,
+				4472ACC116739FFF00F97A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forma iOS";
+			productName = FormaIOS;
+			productReference = 4472ACC316739FFF00F97A81 /* Forma iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4472ACBA16739FFF00F97A81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FormaIOS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jean-Baptiste Martin";
+				TargetAttributes = {
+					4472ACC216739FFF00F97A81 = {
+						DevelopmentTeam = E6RM8BF2C2;
+					};
+				};
+			};
+			buildConfigurationList = 4472ACBD16739FFF00F97A81 /* Build configuration list for PBXProject "Forma iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4472ACB816739FFF00F97A81;
+			productRefGroup = 4472ACC416739FFF00F97A81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4472ACC216739FFF00F97A81 /* Forma iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4472ACC116739FFF00F97A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4472ACD216739FFF00F97A81 /* InfoPlist.strings in Resources */,
+				4472ACDA16739FFF00F97A81 /* Default.png in Resources */,
+				4472ACDC1673A00000F97A81 /* Default@2x.png in Resources */,
+				6684265D19D1F1F20039AB44 /* MainStoryboard.storyboard in Resources */,
+				4472ACDE1673A00000F97A81 /* Default-568h@2x.png in Resources */,
+				44E3E32A1679746400C74FF4 /* reglages@2x.png in Resources */,
+				44E3E32B1679746400C74FF4 /* reglages.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4472ACBF16739FFF00F97A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4472ACD416739FFF00F97A81 /* main.m in Sources */,
+				4472ACD816739FFF00F97A81 /* FormaIOSAppDelegate.m in Sources */,
+				4472ACE41673A00000F97A81 /* CoursViewController.m in Sources */,
+				4472ACEE1673A04F00F97A81 /* Cours.m in Sources */,
+				4472ACF91673A77500F97A81 /* Groupe.m in Sources */,
+				44A832351679093600C09CE5 /* GroupeFetcher.m in Sources */,
+				44A8323C16790B4600C09CE5 /* CoursFetcher.m in Sources */,
+				44A8324F1679391500C09CE5 /* Etablissement.m in Sources */,
+				44A8325316793A0A00C09CE5 /* EtablissementFetcher.m in Sources */,
+				44A832581679457700C09CE5 /* CellView.m in Sources */,
+				44A8325B16795AD000C09CE5 /* Departement.m in Sources */,
+				44A8325F16795B4300C09CE5 /* DepartementFetcher.m in Sources */,
+				44E3E32F167975EC00C74FF4 /* PreferencesManager.m in Sources */,
+				44E3E332167979D000C74FF4 /* ConfigViewController.m in Sources */,
+				4477A20E167996CE00FCFF50 /* EtablissementConfigViewController.m in Sources */,
+				4477A211167A059500FCFF50 /* DepartementConfigViewController.m in Sources */,
+				4454BA0B167B699200942B84 /* GroupeConfigViewController.m in Sources */,
+				4405B7DA167CA13E00CA7000 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4472ACD016739FFF00F97A81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4472ACD116739FFF00F97A81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6684265B19D1F1F20039AB44 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6684265C19D1F1F20039AB44 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4472ACE51673A00000F97A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4472ACE61673A00000F97A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4472ACE81673A00000F97A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormaIOS/Forma iOS-Prefix.pch";
+				INFOPLIST_FILE = "FormaIOS/Forma iOS-Info.plist";
+				PRODUCT_NAME = "Forma iOS";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4472ACE91673A00000F97A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FormaIOS/Forma iOS-Prefix.pch";
+				INFOPLIST_FILE = "FormaIOS/Forma iOS-Info.plist";
+				PRODUCT_NAME = "Forma iOS";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4472ACBD16739FFF00F97A81 /* Build configuration list for PBXProject "Forma iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4472ACE51673A00000F97A81 /* Debug */,
+				4472ACE61673A00000F97A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4472ACE71673A00000F97A81 /* Build configuration list for PBXNativeTarget "Forma iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4472ACE81673A00000F97A81 /* Debug */,
+				4472ACE91673A00000F97A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4472ACBA16739FFF00F97A81 /* Project object */;
+}
