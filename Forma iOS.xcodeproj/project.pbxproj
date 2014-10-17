@@ -334,7 +334,7 @@
 			attributes = {
 				CLASSPREFIX = FormaIOS;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Jean-Baptiste Martin";
+				ORGANIZATIONNAME = "Chalopin Quentin";
 				TargetAttributes = {
 					4472ACC216739FFF00F97A81 = {
 						DevelopmentTeam = E6RM8BF2C2;
