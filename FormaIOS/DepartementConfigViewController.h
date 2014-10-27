@@ -11,6 +11,5 @@
 @interface DepartementConfigViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *roue;
 @property NSMutableArray *deps ;
-@property NSString *departementSelected ;
 
 @end

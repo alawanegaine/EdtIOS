@@ -11,7 +11,6 @@
 
 @interface CoursViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *roue;
-@property (weak, nonatomic) IBOutlet ADBannerView *publicite;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *cours ;
 @property NSCalendar *calendar ;

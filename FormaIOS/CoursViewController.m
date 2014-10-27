@@ -18,7 +18,6 @@
 @property (nonatomic, readonly) FormaIOSAppDelegate *appDelegate ;
 @property (nonatomic, strong) NSArray *jours ;
 @property (nonatomic, strong) UIRefreshControl *refreshControl ;
-@property (nonatomic) BOOL pubAffichee ;
 @property (nonatomic) NSDateComponents *dateComponent;
 @property (nonatomic, strong) NSArray *tempCours ;
 
@@ -38,10 +37,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.tableView.delegate = self ;
     self.tableView.dataSource = self ;
-    self.publicite.delegate = self ;
-    self.pubAffichee = NO ;
-    
-    _dateComponent = [[NSDateComponents alloc] init];
     
     // Create left swipe gesture
     UISwipeGestureRecognizer *gestureRecognizerLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandler:)];
@@ -66,27 +61,21 @@
     self.refreshControl.tintColor = [UIColor whiteColor];
     [self.refreshControl addTarget:self action:@selector(refreshCours) forControlEvents:UIControlEventValueChanged];
     
-    
+    // all cours
     self.cours = [[NSMutableArray alloc] init] ;
-    _tempCours  = [CoursFetcher fetch] ;
+    self.tempCours  = [CoursFetcher fetch] ;
     self.currentDate = [NSDate date];
-    [self fillCours:_tempCours];
+    // get cours for the day of the groups or classe
+    [self fillCours:self.tempCours];
     //NSLog(@"dico %@",self.cours);
     
+    
+    _dateComponent = [[NSDateComponents alloc] init];
     self.appDelegate.prefsManager.calendar = [NSCalendar currentCalendar];
     _dateComponent.day = 0 ;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated] ;
-    if (!self.pubAffichee) {
-        self.publicite.hidden = YES ;
-        [self.tableView setFrame:CGRectMake([self.tableView frame].origin.x, [self.tableView frame].origin.y, [self.tableView frame].size.width, [self.tableView frame].size.height+50)] ;
-    }else {
-        [self.tableView setFrame:CGRectMake([self.tableView frame].origin.x, [self.tableView frame].origin.y, [self.tableView frame].size.width, [self.tableView frame].size.height-50)] ;
-        self.publicite.hidden = NO ;
-    }
-    [self MAJ] ;
 }
 
 
@@ -103,16 +92,17 @@
         _dateComponent.day += 1 ;
         self.currentDate = [self.appDelegate.prefsManager.calendar dateByAddingComponents:_dateComponent toDate:[NSDate date] options:0];
         [self fillCours:_tempCours];
-        
         [_tableView reloadData];
         
     }
     else
     {
-        _dateComponent.day -= 1 ;
-        self.currentDate = [self.appDelegate.prefsManager.calendar dateByAddingComponents:_dateComponent toDate:[NSDate date] options:0];
-        [self fillCours:_tempCours];
-        [_tableView reloadData];
+        if([[NSDate date] compare:self.currentDate] == NSOrderedAscending){
+            _dateComponent.day -= 1 ;
+            self.currentDate = [self.appDelegate.prefsManager.calendar dateByAddingComponents:_dateComponent toDate:[NSDate date] options:0];
+            [self fillCours:_tempCours];
+            [_tableView reloadData];
+        }
     }
 }
 
@@ -184,36 +174,6 @@
     return cell ;
 }
 
-
-- (void)MAJ {
-    if (self.appDelegate.networkStatus == NotReachable) {
-        [self.appDelegate afficherErreurConnexion] ;
-        [self.refreshControl endRefreshing] ;
-    }else {
-        [self.roue startAnimating] ;
-        dispatch_queue_t queue = dispatch_queue_create("MAJ cours", NULL) ;
-        dispatch_async(queue, ^{
-            //[self.appDelegate.dataManager MAJ_cours] ;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadData] ;
-                [self.refreshControl endRefreshing] ;
-                [self.roue stopAnimating] ;
-            }) ;
-        }) ;
-    }
-}
-
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    [self.tableView setFrame:CGRectMake([self.tableView frame].origin.x, [self.tableView frame].origin.y, [self.tableView frame].size.width, [self.tableView frame].size.height-50)] ;
-    self.pubAffichee = YES ;
-    self.publicite.hidden = NO ;
-}
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    NSLog(@"echec chargement pub : %@",error) ;
-    self.pubAffichee = NO ;
-}
-
 #pragma mark - Bannière pub
 
 -(void) fillCours:(NSArray *)withArray
@@ -229,6 +189,8 @@
         {
             // NSLog(@"Current groupe: %@  classe : %@ INDEX : %@", self.appDelegate.prefsManager.groupe, self.appDelegate.prefsManager.classe, tempIdGroupe);
             //NSLog(@"classe : %@ Groupe : %@", self.appDelegate.prefsManager.classe, self.appDelegate.prefsManager.idGroupe);
+            
+            // if idClasse or idGroupe are matched
             if([tempIdGroupe isEqualToString:self.appDelegate.prefsManager.classe] || [tempIdGroupe isEqualToString:self.appDelegate.prefsManager.idGroupe] )
             {
                 // parsing pour le cours pointé

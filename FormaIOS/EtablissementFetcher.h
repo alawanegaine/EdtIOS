@@ -19,7 +19,6 @@
 
 @property (nonatomic, weak) id<EtablissementFetcherProtocol> delegate;
 
-- (void)downloadItems;
-+ (NSDictionary *)fetch ;
++ (NSArray *)fetch ;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface GroupeFetcher : NSObject
 
-+ (NSDictionary*)fetch ;
+
+
++ (NSArray*)fetch ;
 
 @end

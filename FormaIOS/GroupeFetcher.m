@@ -11,37 +11,31 @@
 
 @implementation GroupeFetcher
 
-+ (NSDictionary*)fetch {
-    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] ;
-    NSString *filePath = [documentsPath stringByAppendingPathComponent:@"groupes.txt"] ;
++ (NSArray*)fetch {
     
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://195.154.104.118/getGroupe.php"]];
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
-    NSError *err ;
-    NSString *grpsFile = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err] ;
-    NSLog(@"Erreur : %@",err) ;
-    NSLog(@"Contenu fichier groupes stocké : %@", grpsFile) ;
-    
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init] ;
-    Groupe *grp = [[Groupe alloc] init] ;
-    int iDebut = 0 ;
-    NSRange rg ;
-    for (int i = 0; i < grpsFile.length; i++) {
-        char c = [grpsFile characterAtIndex:i] ;
-        rg.location = iDebut ;
-        rg.length = i-iDebut ;
+    // Check errors
+    if (!data) {
+        NSLog(@"Error : %@", error);
+    } else if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
         
-        if (c == ';') {
-            grp.nom = [grpsFile substringWithRange:rg] ;
-            iDebut = i+1 ;
-        }else if (c == '\n') {
-            grp.ID = [[grpsFile substringWithRange:rg] integerValue] ;
-            iDebut = i+1 ;
-            [dict setObject:grp forKey:grp.nom] ;
-            grp = [[Groupe alloc] init] ;
+        NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
+        if (statusCode != 200) {
+            NSLog(@"Error status code != 200: response = %@", response);
         }
     }
-    NSLog(@"contenu dictionnaire groups : %@",dict) ;
-    return [NSDictionary dictionaryWithDictionary:dict] ;
+    
+    NSError *parseError = nil;
+    NSArray *groups = [[NSArray alloc] init];
+    groups = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError]; // monArray étant un NSArray contenant une liste de NSDictionnary
+    if (!groups) {
+        NSLog(@"Error while parsing (malformed) JSON : %@ ", parseError);
+    }
+    return groups ;
 }
 
 

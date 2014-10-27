@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3ah-Z2-ysF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3ah-Z2-ysF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Etablissement-->
@@ -197,17 +198,17 @@
                         <color key="tintColor" red="0.19607844948768616" green="0.40000003576278687" blue="0.59607845544815063" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xGG-Cw-7Ua" kind="relationship" relationship="rootViewController" id="FZS-58-4xN"/>
+                        <segue destination="Lqf-uh-hZi" kind="relationship" relationship="rootViewController" id="ni1-X6-9s0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vB-kq-jJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-758" y="-59"/>
         </scene>
-        <!--Forma iOS-->
+        <!--CoursViewController-->
         <scene sceneID="u90-sq-vrS">
             <objects>
-                <viewController id="xGG-Cw-7Ua" customClass="CoursViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoursViewController" title="CoursViewController" id="xGG-Cw-7Ua" customClass="CoursViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vbf-h3-NmT"/>
                         <viewControllerLayoutGuide type="bottom" id="zE0-l9-iAo"/>
@@ -439,6 +440,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="1P2-9b-YMb"/>
-        <segue reference="FZS-58-4xN"/>
+        <segue reference="hJO-hB-4p4"/>
     </inferredMetricsTieBreakers>
 </document>

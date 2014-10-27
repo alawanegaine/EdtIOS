@@ -125,6 +125,6 @@
 }
 
 - (NSString*)description {
-    return [NSString stringWithFormat:@"PreferenceManager\nEtablissement : %@\nDepartement : %@\nGroupe : %@",self.etablissement, self.departement, self.groupe] ;
+    return [NSString stringWithFormat:@"PreferenceManager\nEtablissement : %@\nDepartement : %@\nGroupe : %@\nClasse : %@\nidGroupe : %@",self.etablissement, self.departement, self.groupe, self.classe,self.idGroupe] ;
 }
 @end

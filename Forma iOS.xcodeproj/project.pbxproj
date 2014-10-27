@@ -30,7 +30,6 @@
 		44A8325316793A0A00C09CE5 /* EtablissementFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325216793A0A00C09CE5 /* EtablissementFetcher.m */; };
 		44A832581679457700C09CE5 /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A832571679457700C09CE5 /* CellView.m */; };
 		44A8325B16795AD000C09CE5 /* Departement.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325A16795AD000C09CE5 /* Departement.m */; };
-		44A8325F16795B4300C09CE5 /* DepartementFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A8325E16795B4300C09CE5 /* DepartementFetcher.m */; };
 		44B9DF7A167E2768009B4B4D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B9DF79167E2768009B4B4D /* iAd.framework */; };
 		44E3E32A1679746400C74FF4 /* reglages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E3281679746400C74FF4 /* reglages@2x.png */; };
 		44E3E32B1679746400C74FF4 /* reglages.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E3291679746400C74FF4 /* reglages.png */; };
@@ -83,8 +82,6 @@
 		44A832571679457700C09CE5 /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
 		44A8325916795AD000C09CE5 /* Departement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Departement.h; sourceTree = "<group>"; };
 		44A8325A16795AD000C09CE5 /* Departement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Departement.m; sourceTree = "<group>"; };
-		44A8325D16795B4300C09CE5 /* DepartementFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartementFetcher.h; sourceTree = "<group>"; };
-		44A8325E16795B4300C09CE5 /* DepartementFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartementFetcher.m; sourceTree = "<group>"; };
 		44B9DF79167E2768009B4B4D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		44E3E3281679746400C74FF4 /* reglages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reglages@2x.png"; sourceTree = "<group>"; };
 		44E3E3291679746400C74FF4 /* reglages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reglages.png; sourceTree = "<group>"; };
@@ -233,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				44A83250167939F100C09CE5 /* Etablissement */,
-				44A8325C16795B2800C09CE5 /* Departement */,
 				44A832371679094C00C09CE5 /* Groupe */,
 				44A8323916790B1600C09CE5 /* Cours */,
 			);
@@ -286,15 +282,6 @@
 				4477A20B1679969B00FCFF50 /* DetailConfigs */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		44A8325C16795B2800C09CE5 /* Departement */ = {
-			isa = PBXGroup;
-			children = (
-				44A8325D16795B4300C09CE5 /* DepartementFetcher.h */,
-				44A8325E16795B4300C09CE5 /* DepartementFetcher.m */,
-			);
-			name = Departement;
 			sourceTree = "<group>";
 		};
 		44E3E32C1679757F00C74FF4 /* PreferencesManager */ = {
@@ -391,7 +378,6 @@
 				44A8325316793A0A00C09CE5 /* EtablissementFetcher.m in Sources */,
 				44A832581679457700C09CE5 /* CellView.m in Sources */,
 				44A8325B16795AD000C09CE5 /* Departement.m in Sources */,
-				44A8325F16795B4300C09CE5 /* DepartementFetcher.m in Sources */,
 				44E3E32F167975EC00C74FF4 /* PreferencesManager.m in Sources */,
 				44E3E332167979D000C74FF4 /* ConfigViewController.m in Sources */,
 				4477A20E167996CE00FCFF50 /* EtablissementConfigViewController.m in Sources */,

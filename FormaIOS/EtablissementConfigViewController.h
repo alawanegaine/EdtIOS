@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EtablissementConfigViewController : UITableViewController {
-    NSArray *etabs;
-    NSArray *productArray;
-    NSDictionary *dictionary ;
-    
-}
+@interface EtablissementConfigViewController : UITableViewController
+
+
 @property (strong, nonatomic) IBOutlet UITableView *roue;
-@property NSInteger *idEtabSelected  ;
+@property NSArray *etabs ;
+@property NSDictionary *dictionary ;
 
 
 
